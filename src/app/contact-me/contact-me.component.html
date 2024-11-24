@@ -1,0 +1,97 @@
+<section class="container">
+    <div class="contact-container">
+        <div class="main-title">
+            <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+        </div>
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>Contact me here</h4>
+                <p>
+                    Whether you have a project idea, a question, or just want to connect, I'd love to hear from you!
+                    Feel
+                    free to drop me a message anytime. I'll get back to you as soon as possible!
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location:</span>
+                        </div>
+                        <p>Thessaloniki, Greece</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email:</span>
+                        </div>
+                        <p>
+                            <span>panagiotis.skl&#64;gmail.com</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Education:</span>
+                        </div>
+                        <p>
+                            <span class="edu">International Hellenic University, Kavala</span>
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>Languages:</span>
+                        </div>
+                        <p>
+                            <span>Greek, English</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://www.linkedin.com/in/panagiotis-sklidas/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://t.me/sklidas" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="https://github.com/Panagiotis-Sklidas" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-contact">
+                <form [formGroup]="contactMeForm" (ngSubmit)="onSubmit()" class="contact-form">
+                    <div class="input-control i-c-2">
+                        <input type="text" id="name" name="name" formControlName="name" placeholder="Your Name">
+                        <input type="email" id="email" name="email" formControlName="email" placeholder="Your Email">
+                    </div>
+                    <div class="input-control">
+                        <input type="text" id="messageTitle" name="messageTitle" formControlName="messageTitle"
+                            placeholder="Enter Title">
+                    </div>
+                    <div class="input-control">
+                        <textarea id="messageBody" name="messageBody" formControlName="messageBody" cols="15" rows="8"
+                            placeholder="Message Here..."></textarea>
+                    </div>
+
+                    @if(contactMeForm.invalid && contactMeForm.touched){
+                    <p class="control-error">
+                        Invalid form data. Please check your input and try again.
+                    </p>
+                    }
+
+                    <div class="submit-btn">
+                        <a href="#" class="main-btn disable">
+                            <span class="btn-text">Send message</span>
+                            <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span>
+                        </a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
