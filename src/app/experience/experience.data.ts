@@ -24,7 +24,7 @@ export const expData: JobExperience[] = [
     title: 'Computer Science Teacher (Internship)',
     company: '15th Primary School of Kavala',
     description:
-      'I taught basic programming concepts such as if/else condition and problem-solving using Scratch in 6th grade. I taught Microsoft Office in 3rd, 4th, and 5th grade. I taught introductory computer concepts such as the peripherals of a computer and how to use them in 1st and 2nd grade.',
+      'I introduced basic programming concepts, including if/else conditions and problem-solving, to 6th-grade students using Scratch. For 3rd, 4th, and 5th graders, I taught Microsoft Office applications. With 1st and 2nd graders, I covered fundamental computer concepts, such as identifying and using computer peripherals.',
     startDate: 'Apr 2023',
     endDate: 'Jun 2023',
   },
@@ -33,7 +33,7 @@ export const expData: JobExperience[] = [
     title: 'IT Support',
     company: '31st CIS Company NRDC-GR',
     description:
-      "During my enlistment in the Greek army, I was selected to serve in the 31st CIS Company at NATO's Headquarters in Thessaloniki. I was given duties such as: Rapid response to any issues presented both in infrastructure and in user support for the HQ I became familiar with using and maintaining WDS (Windows Deployment Servers) Developed Python scripts to automate repetitive tasks, improving efficiency within the IT department.",
+      "During my enlistment in the Greek army, I was selected to serve in the 31st CIS Company at NATO's Headquarters in Thessaloniki.  My duties included providing rapid response to infrastructure and user support issues at the headquarters, utilizing and maintaining Windows Deployment Servers (WDS), and developing Python scripts to automate repetitive tasks, enhancing efficiency within the IT department.",
     startDate: 'Jan 2024',
     endDate: 'Nov 2024',
   },
