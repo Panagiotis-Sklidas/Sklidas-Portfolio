@@ -1,0 +1,52 @@
+<section class="container">
+    <div class="main-title">
+        <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+    </div>
+    <p class="port-text">
+        Here is some of my work that I've done in various programming languages.
+    </p>
+    <div class="portfolios">
+
+        @for(pro of projects; track pro.uid){
+        <div class="portfolio-item">
+            <app-card [imgPath]="pro.imagePath" [title]="pro.title">
+                <div class="card-dates">
+                    <h3>
+                        <span class="date">{{ pro.startDate }} - {{ pro.endDate }}</span>
+                    </h3>
+                </div>
+                <div class="technology">
+                    @for(tech of pro.technology; track tech){
+                    <div class="tech-item">
+                        {{ tech }}
+                    </div>
+                    }
+                </div>
+
+                <details class="card-details">
+                    <summary>
+                        <span>
+                            More info
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-chevron-down" style="color: var(--color-secondary);"></i>
+                        </span>
+                    </summary>
+                    <p>
+                        {{ pro.description }}
+                    </p>
+                </details>
+
+                <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href={{pro.url}} class="icon" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </app-card>
+        </div>
+        }
+    </div>
+</section>
