@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-image">
+        <img [src]="imgPath()" [alt]="title()" />
+    </div>
+    <div class="card-content">
+        <h2 class="card-title">{{ title() }}</h2>
+        <ng-content />
+    </div>
+</div>
