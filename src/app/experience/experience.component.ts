@@ -15,6 +15,6 @@ export class ExperienceComponent implements OnInit {
   skills = [].map((n) => '');
 
   ngOnInit() {
-    this.experienceData = expData.reverse();
+    this.experienceData = [...expData].reverse();
   }
 }
