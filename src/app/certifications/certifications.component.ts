@@ -14,6 +14,6 @@ export class CertificationsComponent implements OnInit {
   certifications: Certification[] = [];
 
   ngOnInit() {
-    this.certifications = certData;
+    this.certifications = [...certData].reverse();
   }
 }
