@@ -37,4 +37,16 @@ export const proData: Project[] = [
     startDate: 'Jun 2023',
     endDate: 'Jun 2023',
   },
+  {
+    uid: 'pro3',
+    title: 'Portfolio website',
+    technology: ['Angular', 'Scss'],
+    platform: ['github'],
+    imagePath: '../../assets/images/projects/portfolio.png',
+    description:
+      'My personal website portfolio built with Angular, Scss and TypeScript.',
+    url: 'https://github.com/Panagiotis-Sklidas/Sklidas-Portfolio',
+    startDate: 'Nov 2024',
+    endDate: 'Nov 2024',
+  },
 ];
