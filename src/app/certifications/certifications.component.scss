@@ -99,3 +99,24 @@
     opacity: 0.95;
     transform: scale(1);
 }
+
+@media screen and (max-width: 600px) {
+    .certifications {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .certifications {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .certifications {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6rem;
+    }
+
+}

@@ -145,3 +145,24 @@ details .scrollable::-webkit-scrollbar-thumb:hover {
     opacity: 0.95;
     transform: scale(1);
 }
+
+@media screen and (max-width: 600px) {
+    .portfolios {
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 6rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .portfolios {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .portfolios {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
