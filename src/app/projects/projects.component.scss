@@ -146,6 +146,23 @@ details .scrollable::-webkit-scrollbar-thumb:hover {
     transform: scale(1);
 }
 
+details {
+    summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        i {
+            transition: transform 0.5s ease;
+        }
+    }
+
+    p {
+        margin-top: 10px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .portfolios {
         grid-template-columns: repeat(1, 1fr);

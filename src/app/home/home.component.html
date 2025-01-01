@@ -11,11 +11,15 @@
                 Hi, I'm <span>Panagiotis Sklidas.</span>
                 A junior Web Developer.
             </h1>
-            <details>
+            <details #detailsEl (toggle)="0">
                 <summary>
                     I'm a junior Web Developer, I love creating beautiful and functional websites.
+                    @if (detailsEl.open) {
+                    <i class="fa-solid fa-chevron-up" style="color: #e67e22;"></i>
+                    }
+                    @else {
                     <i class="fa-solid fa-chevron-down" style="color: #e67e22;"></i>
-                    <hr>
+                    }
                 </summary>
                 <p>
                     I love building user-friendly apps, programs, and websites that offer seamless experiences.
