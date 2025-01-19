@@ -107,6 +107,12 @@
     }
 }
 
+ul,
+li {
+    list-style-type: circle;
+    color: var(--color-grey-2);
+}
+
 .timeline {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

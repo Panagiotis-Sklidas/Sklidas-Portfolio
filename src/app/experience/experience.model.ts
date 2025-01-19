@@ -3,6 +3,7 @@ export interface JobExperience {
   company: string;
   title: string;
   description: string;
+  responsibility: string[];
   startDate: string;
   endDate: string;
 }

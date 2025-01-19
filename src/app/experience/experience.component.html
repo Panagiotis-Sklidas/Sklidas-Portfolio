@@ -100,6 +100,12 @@
             <p>
                 {{ exp.description }}
             </p>
+            <br>
+            @for(resp of exp.responsibility; track resp){
+            <ul>
+                <li>{{ resp }}</li>
+            </ul>
+            }
         </div>
         }
 
