@@ -6,8 +6,12 @@ export const expData: JobExperience[] = [
     title: 'Bachelor in Computer Science',
     company: 'International Hellenic University, Kavala',
     description:
-      'During my studies, I explored software development, algorithms, and database systems through a comprehensive curriculum. I completed practical projects, including an Advanced Attendance System in Python and a Pharmacy Information System in C#. I gained hands-on experience with programming languages, version control, and relational databases. These experiences helped me build a strong foundation in technology and problem-solving.',
-    responsibility: [],
+      'During my studies, I explored software development, algorithms, and database systems through a comprehensive curriculum. My coursework and projects included:',
+    responsibility: [
+      'Developing an Advanced Attendance System in Python',
+      'Creating a Pharmacy Information System in C#',
+      'Gaining hands-on experience with programming languages, version control, and relational databases',
+    ],
     startDate: 'Sep 2018',
     endDate: 'Jun 2023',
   },
@@ -46,20 +50,11 @@ export const expData: JobExperience[] = [
       "During my enlistment in the Greek army, I was selected to serve in the 31st CIS Company at NATO's Headquarters in Thessaloniki. My duties included:",
     responsibility: [
       'Providing rapid response to infrastructure and user support issues at the headquarters',
+      'Performed hardware diagnostics, repairs, and routine maintenance on workstations and network equipment to ensure system reliability',
       'Utilizing and maintaining Windows Deployment Servers (WDS)',
       'Developing Python scripts to automate repetitive tasks, enhancing efficiency within the IT department',
     ],
     startDate: 'Jan 2024',
     endDate: 'Nov 2024',
-  },
-  {
-    uid: 'exp4',
-    title: 'Customer Support - English',
-    company: 'TaskUs',
-    description:
-      'Provided customer support in a professional environment, ensuring compliance with confidentiality agreements and company policies.',
-    responsibility: [],
-    startDate: 'Jan 2025',
-    endDate: 'Present',
   },
 ];
