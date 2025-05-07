@@ -23,7 +23,7 @@ export const expData: JobExperience[] = [
       'I worked as a front-end web developer in a team working on a real-world application for our clients. My duties included:',
     responsibility: [
       'Maintained the existing code and fixed bugs in the application using Angular, Scss, TypeScript and C#',
-      'Add new feauture using Angular, Scss, TypeScript and C#',
+      'Add new feature using Angular, Scss, TypeScript and C#',
       'In addition to that, I participated in online meetings with the client and their IT team',
     ],
     startDate: 'May 2022',
