@@ -9,10 +9,9 @@ import { NavbarComponent } from './navbar/navbar.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
-  private router = inject(Router);
-
-  ngOnInit() {
-    this.router.navigate(['/home']);
-  }
-}
+// export class AppComponent implements OnInit {
+//   private router = inject(Router);
+// ngOnInit() {
+//   this.router.navigate(['/home']);
+// }
+export class AppComponent {}
