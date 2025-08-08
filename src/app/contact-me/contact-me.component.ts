@@ -30,13 +30,20 @@ export class ContactMeComponent {
   });
 
   onSubmit() {
-    if (this.contactMeForm.invalid) {
-      console.log('invalid');
-      return;
-    }
+    if (this.contactMeForm.valid) {
+      const { name, email, messageTitle, messageBody } =
+        this.contactMeForm.value;
 
-    console.log(this.contactMeForm);
-    this.onReset();
+      const subject = encodeURIComponent(messageTitle ?? '');
+      const body = encodeURIComponent(
+        `${name ?? ''} (${email ?? ''}) says:\n\n${messageBody ?? ''}`
+      );
+
+      const mailtoLink = `mailto:panagiotis.skl+portfolio@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+    } else {
+      this.contactMeForm.markAllAsTouched(); // show validation errors
+    }
   }
 
   onReset() {
