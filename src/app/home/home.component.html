@@ -11,27 +11,29 @@
                 Hi, I'm <span>Panagiotis Sklidas.</span>
                 A junior Web Developer.
             </h1>
-            <details #detailsEl (toggle)="0">
-                <summary>
-                    I'm a junior Web Developer, I love creating beautiful and functional websites.
-                    @if (detailsEl.open) {
-                    <i class="fa-solid fa-chevron-up" style="color: #e67e22;"></i>
-                    }
-                    @else {
-                    <i class="fa-solid fa-chevron-down" style="color: #e67e22;"></i>
-                    }
-                </summary>
-                <p>
-                    I love building user-friendly apps, programs, and websites that offer seamless experiences.
-                    I'm eager to explore the cybersecurity sector and apply my skills to securing digital solutions.
-                </p>
-            </details>
+
+            <mat-accordion>
+                <mat-expansion-panel class="expasion-panel" (opened)="panelOpenState.set(true)"
+                    (closed)="panelOpenState.set(false)">
+                    <mat-expansion-panel-header>
+                        <!-- <mat-panel-title> -->
+                        I'm a junior Web Developer, I love creating beautiful and functional websites.
+                        <!-- </mat-panel-title> -->
+                    </mat-expansion-panel-header>
+                    <p>
+                        I love building user-friendly apps, programs, and websites that offer seamless experiences.
+                        I'm eager to explore the cybersecurity sector and apply my skills to securing digital solutions.
+                    </p>
+                </mat-expansion-panel>
+            </mat-accordion>
+
             <div class="btn-con btn-download-cv">
                 <a href="assets/cv/Sklidas_CV.pdf" download="Panagiotis-Sklidas_CV" class="main-btn">
                     <span class="btn-text">Download CV</span>
                     <span class="btn-icon"><i class="fas fa-download"></i></span>
                 </a>
             </div>
+
         </div>
     </div>
 </header>

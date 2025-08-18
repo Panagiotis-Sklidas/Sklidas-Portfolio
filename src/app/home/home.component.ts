@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatAnchor } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [MatExpansionModule, MatAnchor],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
   constructor(private meta: Meta) {
@@ -31,4 +34,6 @@ export class HomeComponent {
       { name: 'robots', content: 'index, follow' },
     ]);
   }
+
+  readonly panelOpenState = signal(false);
 }
