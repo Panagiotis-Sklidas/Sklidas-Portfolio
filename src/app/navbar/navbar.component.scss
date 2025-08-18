@@ -25,9 +25,11 @@ a {
     color: var(--color-primary);
     text-decoration: none;
     transition: color 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+    border-radius: 0px;
 
     &:hover {
         color: var(--color-primary);
+
         border-bottom: 3px solid var(--color-primary);
     }
 
