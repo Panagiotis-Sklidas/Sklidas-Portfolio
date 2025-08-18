@@ -8,8 +8,9 @@
     <div class="certifications">
         @for (cert of certifications; track cert.uid){
         <div class="certification-item">
-            <app-card [imgPath]="cert.imagePath" [title]="cert.title">
-                <div class="card-dates">
+            <app-card [imgPath]="cert.imagePath" [title]="cert.title" [descreption]="cert.issuedCompany"
+                [date]="[cert.date]" [url]="cert.url">
+                <!-- <div class="card-dates">
                     <h3>
                         <span class="date">{{ cert.date }}</span>
                     </h3>
@@ -25,7 +26,7 @@
                             <i class="fa-solid fa-globe"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </app-card>
         </div>
         }

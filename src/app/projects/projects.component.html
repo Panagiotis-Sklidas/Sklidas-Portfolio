@@ -3,15 +3,15 @@
         <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
     </div>
     <p class="port-text">
-        Here you can find some of the work that I've done in various programming languages. Hover over them to find out
-        more.
+        Here you can find some of the work that I've done in various programming languages.
     </p>
     <div class="portfolios">
 
         @for(pro of projects; track pro.uid){
         <div class="portfolio-item">
-            <app-card [imgPath]="pro.imagePath" [title]="pro.title">
-                <div class="card-dates">
+            <app-card [imgPath]="pro.imagePath" [title]="pro.title" [descreption]="pro.description"
+                [stack]="pro.technology" [date]="[pro.startDate, pro.endDate]" [url]="pro.url">
+                <!-- <div class="card-dates">
                     <h3>
                         <span class="date">{{ pro.startDate }} - {{ pro.endDate }}</span>
                     </h3>
@@ -48,7 +48,7 @@
                             <i class="fab fa-github"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </app-card>
         </div>
         }
