@@ -3,7 +3,7 @@
 // }
 
 .control-error {
-    color: var(--color-error-red);
+    color: var(--color-warn);
 
 }
 
@@ -11,23 +11,24 @@ textarea#messageBody.ng-pristine.ng-invalid.ng-touched,
 input#messageTitle.ng-pristine.ng-invalid.ng-touched,
 input#name.ng-pristine.ng-invalid.ng-touched,
 input#email.ng-pristine.ng-invalid.ng-touched {
-    border: 1px solid var(--color-error-red);
-    filter: drop-shadow(0 0 0.75rem var(--color-error-red));
+    border: 1px solid var(--color-warn);
+    filter: drop-shadow(0 0 0.75rem var(--color-warn));
 }
 
 .disable {
     pointer-events: none;
-    color: var(--color-grey-3);
-    border-color: var(--color-grey-4);
+    color: var(--color-surface-1);
+    border-color: var(--color-surface);
 
     .btn-icon {
-        background-color: var(--color-grey-4);
+        background-color: var(--color-surface);
     }
 }
 
 .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
+    color: var(--color-text);
 
     .left-contact {
         flex: 3;
@@ -74,8 +75,8 @@ input#email.ng-pristine.ng-invalid.ng-touched {
             a {
                 display: flex;
                 align-items: center;
-                color: var(--color-white);
-                background-color: var(--color-grey-5);
+                color: var(--color-text);
+                background-color: var(--color-surface-1);
                 cursor: pointer;
                 justify-content: center;
                 width: 50px;
@@ -85,10 +86,10 @@ input#email.ng-pristine.ng-invalid.ng-touched {
                 transition: all .4s ease-in-out;
 
                 &:hover {
-                    background-color: var(--color-secondary);
+                    background-color: var(--color-primary);
 
                     i {
-                        color: var(--color-primary);
+                        color: var(--color-text);
                     }
                 }
 
@@ -119,9 +120,9 @@ input#email.ng-pristine.ng-invalid.ng-touched {
                 padding: .8rem 1.1rem;
                 outline: none;
                 border: none;
-                background-color: var(--color-grey-5);
+                background-color: var(--color-surface);
                 width: 100%;
-                color: var(--color-white);
+                color: var(--color-text);
                 resize: none;
             }
         }
